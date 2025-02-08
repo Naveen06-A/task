@@ -22,7 +22,7 @@ resource "kubernetes_deployment" "hello_world" {
       spec {
         container {
           name  = "hello-world-nodejs"
-          image = "your-dockerhub-username/hello-world-nodejs:latest"
+          image = "navsho/hello-world-nodejs:latest"
           port {
             container_port = 3000
           }
